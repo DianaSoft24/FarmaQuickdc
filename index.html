@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FarmaQuick</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/8c6b5e7df0.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./Assets/css/style.css">
+
+  </head>
+  
+
+ <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- Tomamos la plantilla NAV de Boostrap-->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top"> <!--lg= largo bg=background-->
+        <div class="container">
+          <a class="navbar-brand" href="#"> <!-- Enlace para redireccionar logo -->
+            <img src="./Assets/images/LOGO FarmaQuick.png" alt="lOGO DE FARMAQUICK">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>  <!-- Botón de colapso para pantallas pequeñas -->
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">  <!-- Lista de enlaces de la barra de navegación (ms-margin start automatico a la izquierda)--> 
+
+               <!-- Enlaces a las secciones de la barra de navegación -->
+            
+              <li class="nav-item">
+                <a class="nav-link" href="#hero">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#productos">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#valoraciones">Valoraciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Equipo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-brand ms-lg-">Descargar</a>
+          </div>
+        </div>
+    </nav>
+    <!-- Sección HERO-->
+     <section id ="hero" class="min-vh-100 d-flex align-items-center text-center"> <!--min-vh= altura minima de la sección, dflex=biblioteca para diseños responsivos, aling= alinea elementos hijos -->
+        <div class="col-12"> <!--Hace que el div ocupe el ancho completo del contenedor, según el sistema de rejilla de Bootstrap (12 columnas).-->
+            <h1 class="text-uppercase text-white fw-semibold display-1">FarmaQuick</h1>  <!--Hace que el div ocupe el ancho completo del contenedor, según el sistema de rejilla de Bootstrap (12 columnas).-->
+            <h5 class="text-white mt-3 mb-4">Tu salud, nuestra prioridad; tu confianza, nuestro compromiso.</h5> 
+            <div>
+                <a href="#nosotros" class= "btn btn-brand me-2">Empezar</a>
+                <a href="#productos" class= "btn btn-light ms-2">Nuestros Productos</a>
+
+            </div>
+          <!-- min vh = a altura mínima de seccion, uppercase:mayusculas, display:ordena la letra-->
+        </div>
+
+     </section>
+
+    <!--Sección NOSOTROS-->
+
+    <section id="nosotros" class="section-padding">    <!--pading= estilo de rrelleno-->
+      <div class="container">  <!--limita el ancho y alinea elementos-->
+          <div class="row">  <!--Crea filla en la rejilla Bootstrap-->
+              <div class="col-12 text-center"> <!--columna que ocupa todo el ancho disponible (12 colum) -->
+                  <div class="section-title">  
+              <h1 class="display-5 fw-semibold mb-1">Quienes Somos</h1> <!--mb-margin botton(inferior) -->
+              <div class="line"></div>
+              <p></p>
+                  </div>
+              </div>
+           </div>
+
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-6 "> 
+            <img src="Assets/images/NOSOTROS1.jpg" alt="">
+          </div>      
+          <div class="col-lg-5"> <!--Columna para la imagen en pantallas grandes (6 columnas de ancho en el sistema de rejilla). -->
+            <p class=" mt-3 mb-4">Con más de 25 años de experiencia y múltiples sedes a nivel nacional, nuestra cadena de farmacias se enorgullece de ser <br> tu socio confiable en el cuidado de la salud. FarmaQuick se enfoca en brindarte un servicio excepcional y productos de la más alta calidad. Es por eso que te garantizamos: </p>
+            <div class="d-flex mb-4 pt-3">  <!-- Párrafo con márgenes superior e inferior para espaciado." -->
+              <div class="iconbox me-3">
+                <i class="ri-medal-fill"></i> <!-- Ícono de FontAwesome  -->
+              </div>
+              <div>
+                <h5 class="mt-2">Productos de alta calidad</h5>
+              </div>
+            </div>
+            
+            <div class="d-flex mb-4">
+              <div class="iconbox me-3"> <!--me= margin end->
+                <i class="ri-truck-fill"></i> <!-- Icono para "Entrega Rápida y Segura" -->
+              </div>
+              <div>
+                <h5 class="mt-2">Entrega Rápida y Segura</h5>
+              </div>
+            </div>
+            
+            <div class="d-flex mb-3">
+              <div class="iconbox me-3">
+                <i class="ri-user-3-fill"></i> <!-- Icono para "Transparencia y Comunicación Abierta" -->
+              </div>
+              <div>
+                <h5 class="mt-2">Atención personalizada</h5>
+              </div>
+            </div>
+            
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--Sección SERVICIOS-->
+    <section id="servicios" class="section-padding border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-title">
+              <h1 class="display-5 fw-semibold mb-1">Servicios</h1>
+              <div class="line"></div>
+              <p> Conoce nuestros servicios enfocados en tu bienestar.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 text-center">
+          <!-- Asesoría Farmacológica -->
+          <div class="col-lg-4 col-sm-6">
+            <div class="servicios theme-shadow p-lg-5 p-4">
+              <div class="iconbox">
+                <i class="ri-chat-3-line"></i>
+              </div>
+              <h5 class="mt-4 mb-3">Asesoría farmacológica</h5>
+              <p>Recibe orientación especializada sobre el uso seguro y efectivo de medicamentos.</p>
+            </div>
+          </div>
+          <!-- Entrega de Medicamentos --> 
+          <div class="col-lg-4 col-sm-6"> <!--sm= small-->
+            <div class="servicios theme-shadow p-lg-5 p-4">
+              <div class="iconbox">
+                <i class="ri-capsule-line"></i>
+              </div>
+              <h5 class="mt-4 mb-3">Entrega de medicamentos</h5>
+              <p>Accede a una entrega rápida y segura de tus medicamentos en la comodidad de tu hogar.</p>
+            </div>
+          </div>
+          <!-- Exámenes Clínicos -->
+          <div class="col-lg-4 col-sm-6">
+            <div class="servicios theme-shadow p-lg-5 p-4">
+              <div class="iconbox">
+                <i class="ri-hospital-line"></i>
+              </div>
+              <h5 class="mt-4 mb-3">Exámenes clínicos</h5>
+              <p>Realiza pruebas diagnósticas confiables para el seguimiento de tu salud.</p>
+            </div>
+          </div>
+          <!-- Visitas Médicas -->
+          <div class="col-lg-4 col-sm-6">
+            <div class="servicios theme-shadow p-lg-5 p-4">
+              <div class="iconbox">
+                <i class="ri-stethoscope-line"></i>
+              </div>
+              <h5 class="mt-4 mb-3">Visitas médicas</h5>
+              <p>Recibe atención médica personalizada en tu domicilio, adaptada a tus necesidades.</p>
+            </div>
+          </div>
+          <!-- Vacunación -->
+          <div class="col-lg-4 col-sm-6">
+            <div class="servicios theme-shadow p-lg-5 p-4">
+              <div class="iconbox">
+                <i class="ri-syringe-line"></i>
+              </div>
+              <h5 class="mt-4 mb-3">Vacunación</h5>
+              <p>Protege tu salud con un servicio de vacunación cómodo y seguro a domicilio.</p>
+            </div>
+          </div>
+          <!-- Dispositivos de Monitoreo -->
+          <div class="col-lg-4 col-sm-6">
+            <div class="servicios theme-shadow p-lg-5 p-4">
+              <div class="iconbox">
+                <i class="ri-heart-pulse-line"></i>
+              </div>
+              <h5 class="mt-4 mb-3">Dispositivos de monitoreo</h5>
+              <p>Monitorea tu salud con dispositivos avanzados y tecnología de vanguardia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Sección PRODUCTOS-->
+    <section id="productos" class="section-padding border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-title">
+              <h1 class="display-5 fw-semibold mb-1">Productos</h1>
+              <div class="line"></div>
+              <p>Explora la gran variedad de productos que tenemos para ti.</p>
+              
+              <section class="container top-products">
+                <div class="container-products">
+                  <!-- Producto 1 -->
+                  <div class="card-product">
+                    <div class="container-img">
+                      <img src="Assets/images/CENTREAL.png" alt="Centrum Mujer 200 Tab"/>
+                      <span class="discount">-13%</span>   <!-- permite estilizar el descuento y colocarlo sobre la imagen sin afectar el flujo de otros elementos. -->
+                      <div class="button-group">
+                        <span><i class="fa-regular fa-eye"></i></span>
+                        <span><i class="fa-regular fa-heart"></i></span>
+                        <span><i class="fa-solid fa-code-compare"></i></span>
+                      </div>
+                    </div>
+                    <div class="content-card-product">
+                      <h3>Centrum Women 200gr</h3>
+                      <div class="price-and-cart">
+                        <p class="price">$71.200 <span class="original-price">$80.400</span></p>
+                        <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- Producto 2 -->
+                  <div class="card-product">
+                    <div class="container-img">
+                      <img src="Assets/images/DOLEXNIÑOS.png" alt="Dolex Niños" />
+                      <span class="discount">-22%</span> 
+                      <div class="button-group">
+                        <span><i class="fa-regular fa-eye"></i></span>
+                        <span><i class="fa-regular fa-heart"></i></span>
+                        <span><i class="fa-solid fa-code-compare"></i></span>
+                      </div>
+                    </div>
+                    <div class="content-card-product">
+                      <h3>Dolex Niños 60ml</h3>
+                      <div class="price-and-cart">
+                        <p class="price">$18.300<span class="original-price" >$23.500</span></p>
+                        <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- Producto 3 -->
+                  <div class="card-product">
+                    <div class="container-img">
+                      <img src="Assets/images/APRONAX4.jpeg" alt="Apronax 75mg" />
+                      <div class="button-group">
+                        <span><i class="fa-regular fa-eye"></i></span>
+                        <span><i class="fa-regular fa-heart"></i></span>
+                        <span><i class="fa-solid fa-code-compare"></i></span>
+                      </div>
+                    </div>
+                    <div class="content-card-product">
+                      <h3>Apronax abletas 175mg</h3>
+                      <div class="price-and-cart">
+                        <p class="price">$15.900</p>
+                        <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- Producto 4 -->
+                  <div class="card-product">
+                    <div class="container-img">
+                      <img src="Assets/images/TENSIOMETRO.png" alt="Tensiometro omron" />
+                      <div class="button-group">
+                        <span><i class="fa-regular fa-eye"></i></span>
+                        <span><i class="fa-regular fa-heart"></i></span>
+                        <span><i class="fa-solid fa-code-compare"></i></span>
+                      </div>
+                    </div>
+                    <div class="content-card-product">
+                      <h3>Tensiometro marca Omron</h3>
+                      <div class="price-and-cart">
+                        <p class="price">$215.000</p>
+                        <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- Producto 5 -->
+                  <div class="card-product">
+                    <div class="container-img">
+                      <img src="Assets/images/pequeñin2.jpeg" alt="Cafe Latte" />
+                      <span class="discount">-10%</span>
+                      <div class="button-group">
+                        <span><i class="fa-regular fa-eye"></i></span>
+                        <span><i class="fa-regular fa-heart"></i></span>
+                        <span><i class="fa-solid fa-code-compare"></i></span>
+                      </div>
+                    </div>
+                    <div class="content-card-product">
+                      <h3>Pañales pequeñin <br> x 30 unidades</h3>
+                      <div class="price-and-cart">
+                        <p class="price">$40.900 <span class="original-price">$5.00</span></p>
+                        <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- Producto 6 -->
+                  <div class="card-product">
+                    <div class="container-img">
+                      <img src="Assets/images/leche3.jpeg" alt="Leche NAN" />
+                      <span class="discount">-15%</span>
+                      <div class="button-group">
+                        <span><i class="fa-regular fa-eye"></i></span>
+                        <span><i class="fa-regular fa-heart"></i></span>
+                        <span><i class="fa-solid fa-code-compare"></i></span>
+                      </div>
+                    </div>
+                    <div class="content-card-product">
+                      <h3>Leche NAN comfort <br> x 800g</h3>
+                      <div class="price-and-cart">
+                        <p class="price">$68.000 <span class="original-price">$78.200</span></p>
+                        <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección VALORACIONES-->
+    <section id="valoraciones" class="section-padding bg-light">
+      <div class="container">
+          <div class="row">
+              <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                  <div class="section-title">
+                      <h1 class="display-4 fw-semibold">Valoraciones</h1>
+                      <div class="line"></div>
+                      <p>Descubre lo que nuestros clientes opinan sobre FarmaQuick.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="row gy-5 gx-4">
+              <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="150">
+                  <div class="review">
+                      <div class="review-head p-4 bg-white theme-shadow">   <!--reviewhead= estilizar encabezado, p=padding relleno en elementos, theme shadow=aplicasombra-->
+                          <div class="text-warning">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                          </div>
+                          <p>El servicio es excepcional y la entrega es siempre a tiempo. Los precios son competitivos y el personal es amable.</p>
+                      </div>
+                      <div class="review-person mt-4 d-flex align-items-center">
+                          <img class="rounded-circle" src="Assets/images/Persona1.jpg" alt="">
+                          <div class="ms-3">
+                              <h5>Carlos Murillo</h5>
+                              <small>Hace 1 semana</small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                  <div class="review">
+                      <div class="review-head p-4 bg-white theme-shadow">
+                          <div class="text-warning">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-line"></i>
+                          </div>
+                          <p>Estoy muy satisfecha con la calidad de los productos y la atención que he recibido. Sin duda, seguiré comprando aquí.</p>
+                      </div>
+                      <div class="review-person mt-4 d-flex align-items-center">
+                          <img class="rounded-circle" src="./Assets/images/Persona2.jpg" alt="">
+                          <div class="ms-3">
+                              <h5>Adriana Niño</h5>
+                              <small>Hace 2 semanas</small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="350">
+                  <div class="review">
+                      <div class="review-head p-4 bg-white theme-shadow">
+                          <div class="text-warning">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-half-line"></i>
+                              <i class="ri-star-line"></i>
+                          </div>
+                          <p>El seguimiento que ofrecen con los dispositivos de monitoreo es muy útil. Además, el servicio al cliente es excelente</p>
+                      </div>
+                      <div class="review-person mt-4 d-flex align-items-center">
+                          <img class="rounded-circle" src="./Assets/images/Persona3.png" alt="">
+                          <div class="ms-3">
+                              <h5>Johan Ruiz</h5>
+                              <small>Hace 3 dias</small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="450">
+                  <div class="review">
+                      <div class="review-head p-4 bg-white theme-shadow">
+                          <div class="text-warning">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-line"></i>
+                          </div>
+                          <p>La farmacia ofrece una experiencia de compra sin complicaciones. Los precios son buenos y el envío es rápido.</p>
+                      </div>
+                      <div class="review-person mt-4 d-flex align-items-center">
+                          <img class="rounded-circle" src="./Assets/images/Persona4.png" alt="">
+                          <div class="ms-3">
+                              <h5>Paula Catro</h5>
+                              <small>Hace 3 semanas</small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="550">
+                  <div class="review">
+                      <div class="review-head p-4 bg-white theme-shadow">
+                          <div class="text-warning">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-line"></i>
+                              <i class="ri-star-half-line"></i>
+                          </div>
+                          <p>Siempre tienen lo que necesito y la entrega es eficiente. Aprecio mucho el cuidado en el servicio al cliente.</p>
+                      </div>
+                      <div class="review-person mt-4 d-flex align-items-center">
+                          <img class="rounded-circle" src="./Assets/images/Persona5.png" alt="">
+                          <div class="ms-3">
+                              <h5>Jaider Tellez</h5>
+                              <small>Hace 8 días</small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
+                  <div class="review">
+                      <div class="review-head p-4 bg-white theme-shadow">
+                          <div class="text-warning">
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                              <i class="ri-star-fill"></i>
+                          </div>
+                          <p>La calidad de los productos y la atención recibida han superado mis expectativas. Totalmente recomendado</p>
+                      </div>
+                      <div class="review-person mt-4 d-flex align-items-center">
+                          <img class="rounded-circle" src="./assets/images/Persona6.png" alt="">
+                          <div class="ms-3">
+                              <h5>Silvia Perez</h5>
+                              <small>Hace 50 min</small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+     <!-- TEAM -->
+     <section id="team" class="section-padding">
+      <div class="container">
+          <div class="row">
+              <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">  <!-- AOS-bibliot anim, retraso de milisegundos antes de que la animación comience.-->
+                  <div class="section-title">
+                      <h1 class="display-4 fw-semibold">Nuestro Equipo</h1>
+                      <div class="line"></div>
+                      <p>Conoce a los profesionales que están detrás de nuestro <br> compromiso con la excelencia.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="row g-4 text-center ">
+              <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
+                  <div class="team-member image-zoom">
+                      <div class="image-zoom-wrapper">
+                          <img src="./assets/images/EquipoP1.jpeg" alt="">
+                      </div>
+                      <div class="team-member-content">
+                          <h4 class="text-white">Andrés Salazar</h4>
+                          <p class="mb-0 text-white">Químico Farmacéutico</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
+                  <div class="team-member image-zoom">
+                      <div class="image-zoom-wrapper">
+                          <img src="./assets/images/EquipoP3.jpg" alt="">
+                      </div>
+                      <div class="team-member-content">
+                          <h4 class="text-white">Jhonatan Vega</h4>
+                          <p class="mb-0 text-white">Coordinador de Calidad</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4" data-aos="fade-down" data-aos-delay="350">
+                  <div class="team-member image-zoom">
+                      <div class="image-zoom-wrapper">
+                          <img src="./assets/images/EquipoP2.jpg" alt="">
+                      </div>
+                      <div class="team-member-content">
+                          <h4 class="text-white">Juliana Peña</h4>
+                          <p class="mb-0 text-white">Medica General</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Sección CONTACTO-->
+  <section class="section-padding bg-light" id="contacto">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                <div class="section-title">
+                    <h1 class="display-4 text-white fw-semibold">Contáctanos</h1>
+                    <div class="line bg-white"></div>
+                    <p class="text-white">¿Tienes alguna pregunta o necesitas asistencia? <br> Contáctanos nuestro equipo estará encantado de ayudarte.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center" data-aos="fade-down" data-aos-delay="250">
+            <div class="col-lg-8">
+                <form action="#" class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
+                    <div class="form-group col-lg-6">
+                        <input type="text" class="form-control" placeholder="Ingresa tu primer nombre">   <!-- Placeholder=texto indicativo-->
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <input type="text" class="form-control" placeholder="Ingresa tu segundo nombre">
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <input type="email" class="form-control" placeholder="Ingresa tu correo electrónico">
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <input type="text" class="form-control" placeholder="Ingresa el asunto">
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <textarea name="message" rows="5" class="form-control" placeholder="Ingresa tu mensaje"></textarea>
+                    </div>
+                    <div class="form-group col-lg-12 d-grid">
+                        <button class="btn btn-brand">Enviar Formulario</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                <div class="section-title">
+                    <h1 class="display-4 fw-semibold">Blog FarmaQuick</h1>
+                    <div class="line"></div>
+                    <p>Mantente al tanto de las últimas noticias, tendencias <br> y consejos en nuestra industria.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
+                <div class="team-member image-zoom">
+                    <div class="image-zoom-wrapper">
+                        <img src="./assets/images/Blog1.jpg" alt="">
+                    </div>
+                    <h5 class="mt-4">Tendencias Emergentes en el Cuidado de la Salud para 2024</h5>
+                    <p>Descubre las innovaciones y cambios que están marcando el rumbo del cuidado de la salud en el próximo año.</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
+                <div class="team-member image-zoom">
+                    <div class="image-zoom-wrapper">
+                        <img src="./assets/images/Blog2.jpg" alt="">
+                    </div>
+                    <h5 class="mt-4">Cómo la Tecnología revolucionó el Sector Farmacéutico</h5>
+                    <p>Explora cómo las últimas innovaciones tecnológicas están transformando el sector farmacéutico.</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-down" data-aos-delay="350">
+                <div class="team-member image-zoom">
+                    <div class="image-zoom-wrapper">
+                        <img src="./assets/images/Blog3.jpg" alt="">
+                    </div>
+                    <h5 class="mt-4">Cómo Leer Etiquetas de Medicamentos Efectivamente</h5>
+                    <p>Aprende a interpretar las etiquetas de medicamentos para verificar que los estas tomando de manera segura.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-3 col-sm-6">
+                    <a href="#"><img src="./assets/images/logo-white.svg" alt=""></a>
+                    <h5 class="mb-0 text-white">NUESTRAS</h5>
+                    <h5 class="mb-0 text-white">REDES SOCIALES</h5>
+                    <div class="line"></div>
+                    <p>Conoce nuestras redes sociales</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="#"><i class="ri-instagram-fill"></i></a>
+                        <a href="#"><i class="ri-github-fill"></i></a>
+                        <a href="#"><i class="ri-dribbble-fill"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h5 class="mb-0 text-white">SERVICIOS</h5>
+                    <div class="line"></div>
+                    <ul>
+                        <li><a href="#">Asesoria Farmacológica</a></li>
+                        <li><a href="#">Entrega de medicamentos</a></li>
+                        <li><a href="#">Exámenes Clinicos</a></li>
+                        <li><a href="#">Visitas médicas</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h5 class="mb-0 text-white">NOSOTROS</h5>
+                    <div class="line"></div>
+                    <ul>
+                        <li><a href="#">Compañia</a></li>
+                        <li><a href="#">farmáceutica</a></li>
+                        <li><a href="#">enfocada en</a></li>
+                        <li><a href="#">la calidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h5 class="mb-0 text-white">CONTACTO</h5>
+                    <div class="line"></div>
+                    <ul>
+                        <li>Calle 53 #87j-23, Bogotá</li>
+                        <li>(414) 586 - 3017</li>
+                        <li>www.farmaquick.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+                <div class="col-auto">
+                    <p class="mb-0">© Copyright FarmaQuick. Todos los derechos reservados</p>
+                </div>
+                <div class="col-auto">
+                    <p class="mb-0">Designed 💜 By Diana Acosta <a href="https://www.youtube.com/channel/UCYMEEnLzGGGIpQQ3Nu_sBsQ"></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+ 
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
+
+
